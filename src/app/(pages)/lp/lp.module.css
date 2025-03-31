@@ -1,0 +1,51 @@
+.bg1 {
+    background-image: url('/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 4rem;
+}
+.bg2 {
+    background-image: url('/2.png');
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+    width: 100%;
+}
+.bg3 {
+    background-image: url('/3.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    background-color: rgba(83, 83, 83, 0.5);
+    height: 100%;
+    color: white;
+}
+
+.bg {
+    background-color: rgba(83, 83, 83);
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.divider {
+    background-color: #17cb95;
+    width: 10rem;
+    height: 1rem;
+}
+.divider2 {
+    background-color: #ffde58;
+    width: 10rem;
+    height: 1rem;
+}
+.divider3 {
+    background-color: #ff3131;
+    width: 10rem;
+    height: 1rem;
+}
