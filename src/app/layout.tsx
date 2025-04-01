@@ -4,12 +4,12 @@ import './globals.css';
 import SEO from './components/SEO';
 import { Providers } from './providers';
 
-export const roboto = Roboto({
+const roboto = Roboto({
     weight: '900',
     variable: '--font-roboto',
     subsets: ['latin'],
 });
-export const roboto1 = Roboto({
+const roboto1 = Roboto({
     weight: '100',
     variable: '--font-roboto1',
     subsets: ['latin'],
@@ -60,7 +60,7 @@ export default function RootLayout({
         <html lang='en'>
             <SEO />
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${russo_one.variable} ${roboto.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${russo_one.variable} ${roboto.variable} ${roboto1.variable} antialiased`}
             >
                 <Providers>{children}</Providers>
             </body>
