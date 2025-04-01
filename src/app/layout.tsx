@@ -7,10 +7,12 @@ import { Providers } from './providers';
 export const roboto = Roboto({
     weight: '900',
     variable: '--font-roboto',
+    subsets: ['latin'],
 });
 export const roboto1 = Roboto({
     weight: '100',
     variable: '--font-roboto1',
+    subsets: ['latin'],
 });
 
 const russo_one = Russo_One({
