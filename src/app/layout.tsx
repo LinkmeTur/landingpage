@@ -1,9 +1,9 @@
-'use client';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Russo_One, Roboto } from 'next/font/google';
 import './globals.css';
 import SEO from './components/SEO';
 import { Providers } from './providers';
+import Head from 'next/head';
 
 const roboto = Roboto({
     weight: '900',
@@ -59,7 +59,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <SEO />
+            <Head>
+                <SEO />
+            </Head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} ${russo_one.variable} ${roboto.variable} ${roboto1.variable} antialiased`}
             >
