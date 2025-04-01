@@ -1,4 +1,4 @@
-'use strict';
+'use client';
 import { Button } from '@heroui/button';
 
 const ButtonRegister = () => {

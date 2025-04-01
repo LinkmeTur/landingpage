@@ -1,3 +1,4 @@
+'use client';
 import FormRegister from './formRegister';
 import styles from './lp.module.css';
 import Image from 'next/image';

@@ -1,3 +1,4 @@
+'use client';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Russo_One, Roboto } from 'next/font/google';
 import './globals.css';
