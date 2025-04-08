@@ -6,6 +6,37 @@
     width: 100%;
     padding: 0 4rem;
 }
+
+.bg1text {
+    display: flow;
+    float: left;
+    width: 55%;
+    font-family: var(--font-roboto);
+    box-shadow: 0px 0px 40px 50px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg1texth1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    margin-top: 1.5rem;
+}
+
+.bg1texth2 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.bg1textp {
+    font-size: 1rem;
+    font-weight: lighter;
+
+    margin-top: 1rem;
+}
+
 .bg2 {
     background-image: url('/2.png');
     background-size: cover;

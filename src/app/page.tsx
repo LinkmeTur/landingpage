@@ -1,6 +1,6 @@
 'use client';
 
-import LP from './(pages)/lp/page';
+import LP from './components/lp/page';
 
 export default function Home() {
     return (

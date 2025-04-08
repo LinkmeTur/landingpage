@@ -1,4 +1,5 @@
 'use client';
+import ButtonRegister from './buttonRegister';
 import FormRegister from './formRegister';
 import styles from './lp.module.css';
 import Image from 'next/image';
@@ -7,52 +8,17 @@ const LP = () => {
         <div style={{ height: '100vh', width: '100vw' }}>
             <div className={styles.bg1}>
                 {/* conecte-se  */}
-                <div
-                    style={{
-                        display: 'flow',
-                        float: 'left',
-                        width: '55%',
-                        boxShadow: '0px 0px 40px 50px rgba(0, 0, 0 ,  0.3)',
-                        padding: '2rem ',
-                        backgroundColor: 'rgba(0, 0, 0 ,  0.3)',
-                    }}
-                >
+                <div className={styles.bg1text}>
                     <div className={styles.divider}></div>
-                    <h1
-                        style={{
-                            fontSize: '4.6rem',
-                            fontWeight: 'bold',
-                            fontFamily: 'var(--font-roboto)',
-                            lineHeight: '5rem',
-                            marginTop: '2rem',
-                        }}
-                    >
-                        CONECTE-SE COM QUEM REALMENTE IMPORTA:{' '}
-                    </h1>
-                    <h2
-                        style={{
-                            fontSize: '2rem',
-                            fontWeight: 'lighter',
-                            fontFamily: 'var(--font-roboto)',
-
-                            margin: '2rem 2rem 2rem 0 ',
-                        }}
-                    >
+                    <h1 className={styles.bg1texth1}>CONECTE-SE COM QUEM REALMENTE IMPORTA:</h1>
+                    <h2 className={styles.bg1texth2}>
                         Na <span style={{ fontWeight: 'bold' }}>LinkMe Tur</span> você encontra os
                         <br /> parceiros certos, de forma rápida,
                         <br />
                         simples e eficiente.
                     </h2>
                     <div className={styles.divider}></div>
-                    <p
-                        style={{
-                            fontSize: '1.5rem',
-                            fontWeight: 'lighter',
-                            fontFamily: 'var(--font-roboto)',
-
-                            marginTop: '2rem',
-                        }}
-                    >
+                    <p className={styles.bg1textp}>
                         Para empresas: encontre os melhores prestadores.
                         <br /> Para prestadores: ganhe visibilidade. <br />
                         Com a LinkMe Tur, a inovação e as oportunidades estão <br />a um clique de
@@ -61,6 +27,7 @@ const LP = () => {
                 </div>
                 {/* formulario */}
                 <div
+                    id='formLP'
                     style={{
                         backgroundColor: 'white',
                         width: '45%',
@@ -118,38 +85,41 @@ const LP = () => {
                             width: '55%',
                         }}
                     >
-                        <div className={styles.divider} />
+                        <div
+                            className={styles.divider}
+                            style={{ position: 'relative', top: '0' }}
+                        />
                         <h1
                             style={{
-                                fontSize: '4rem',
+                                fontSize: '3rem',
 
                                 fontFamily: 'var(--font-roboto)',
 
-                                marginTop: '2rem',
+                                marginTop: '1.5rem',
                             }}
                         >
                             É daqui
                         </h1>
                         <h1
                             style={{
-                                fontSize: '4rem',
+                                fontSize: '3rem',
                                 fontWeight: 'bold',
                                 fontFamily: 'var(--font-roboto)',
                             }}
                         >
                             É PRA TI
                         </h1>
-                        <div style={{ display: 'flex', marginTop: '3rem' }}>
+                        <div style={{ display: 'flex', marginTop: '1.5rem' }}>
                             <div className={styles.divider} />
                             <div className={styles.divider2} />
                             <div className={styles.divider3} />
                         </div>
                         <p
                             style={{
-                                fontSize: '4rem',
+                                fontSize: '3rem',
                                 fontWeight: 'bold',
                                 fontFamily: 'var(--font-roboto)',
-                                marginBottom: '3rem',
+                                marginBottom: '1.5rem',
                             }}
                         >
                             UMA INICIATIVA COM <br />
@@ -166,8 +136,7 @@ const LP = () => {
                     >
                         <p
                             style={{
-                                fontSize: '2rem',
-
+                                fontSize: '1.2rem',
                                 fontFamily: 'var(--font-roboto)',
                                 textAlign: 'justify',
                             }}
@@ -178,14 +147,21 @@ const LP = () => {
                             reconstrução do Estado após a crise climática que atingiu o Rio Grande
                             do Sul em 2024.
                         </p>
-                        <div className={styles.divider} style={{ marginTop: '3.5rem' }} />
-                    </div>
+                    </div>{' '}
                 </div>
                 <div className={styles.bg}>
                     <div
+                        className={styles.divider}
+                        style={{
+                            position: 'relative',
+                            top: '-5px',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                        }}
+                    />
+                    <div
                         style={{
                             display: 'flex',
-
                             alignItems: 'center',
                             justifyContent: 'space-around',
                             flexWrap: 'wrap',
@@ -195,7 +171,7 @@ const LP = () => {
                             style={{
                                 width: '100%',
                                 textAlign: 'center',
-                                fontSize: '3rem',
+                                fontSize: '2.2rem',
                                 fontWeight: 'bold',
                                 fontFamily: 'var(--font-roboto)',
                                 margin: '2rem 0',
@@ -213,7 +189,7 @@ const LP = () => {
                         >
                             <h1
                                 style={{
-                                    fontSize: '2.5rem',
+                                    fontSize: '1.8rem',
                                     fontWeight: 'bold',
                                     fontFamily: 'var(--font-roboto)',
                                     textAlign: 'justify',
@@ -224,7 +200,7 @@ const LP = () => {
                             </h1>
                             <p
                                 style={{
-                                    fontSize: '2rem',
+                                    fontSize: '1.3rem',
                                     fontFamily: 'var(--font-roboto)',
                                 }}
                             >
@@ -239,7 +215,7 @@ const LP = () => {
                         >
                             <h1
                                 style={{
-                                    fontSize: '2.5rem',
+                                    fontSize: '1.8rem',
                                     fontWeight: 'bold',
                                     fontFamily: 'var(--font-roboto)',
                                     textAlign: 'justify',
@@ -250,7 +226,7 @@ const LP = () => {
                             </h1>
                             <p
                                 style={{
-                                    fontSize: '2rem',
+                                    fontSize: '1.3rem',
                                     fontFamily: 'var(--font-roboto)',
                                 }}
                             >
@@ -265,7 +241,7 @@ const LP = () => {
                         >
                             <h1
                                 style={{
-                                    fontSize: '2.5rem',
+                                    fontSize: '1.8rem',
                                     fontWeight: 'bold',
                                     fontFamily: 'var(--font-roboto)',
                                     textAlign: 'justify',
@@ -276,7 +252,7 @@ const LP = () => {
                             </h1>
                             <p
                                 style={{
-                                    fontSize: '2rem',
+                                    fontSize: '1.3rem',
                                     fontFamily: 'var(--font-roboto)',
                                 }}
                             >
@@ -291,7 +267,7 @@ const LP = () => {
                         >
                             <h1
                                 style={{
-                                    fontSize: '2.5rem',
+                                    fontSize: '1.8rem',
                                     fontWeight: 'bold',
                                     fontFamily: 'var(--font-roboto)',
                                     textAlign: 'justify',
@@ -302,7 +278,7 @@ const LP = () => {
                             </h1>
                             <p
                                 style={{
-                                    fontSize: '2rem',
+                                    fontSize: '1.3rem',
                                     fontFamily: 'var(--font-roboto)',
                                 }}
                             >
@@ -332,13 +308,13 @@ const LP = () => {
                         >
                             <div
                                 style={{
-                                    width: '15%',
+                                    width: '30%',
                                     zIndex: '99',
                                 }}
                             >
                                 <h1
                                     style={{
-                                        fontSize: '4rem',
+                                        fontSize: '3rem',
                                         fontFamily: 'var(--font-roboto)',
                                         marginBottom: '3rem',
                                     }}
@@ -349,7 +325,7 @@ const LP = () => {
                                 </h1>
                                 <p
                                     style={{
-                                        fontSize: '2rem',
+                                        fontSize: '1.5rem',
                                         fontFamily: 'var(--font-roboto)',
                                         marginBottom: '3rem',
                                     }}
@@ -357,18 +333,22 @@ const LP = () => {
                                     Veja como a <strong>LinkMe Tur</strong> transforma a conexão
                                     entre empresas e prestadores de serviços
                                 </p>
-                                <button>cadastra-se</button>
+                                <ButtonRegister
+                                    title='CADASTRE_SE'
+                                    action={() => {
+                                        const form = document.getElementById('formLP');
+                                        if (form) {
+                                            form.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }}
+                                />
                             </div>
                             <div>
-                                <Image src='/4.png' alt='' width={1200} height={100} />
+                                <Image src='/4.png' alt='' width={800} height={100} />
                             </div>
                         </div>
-                        <div
-                            style={{
-                                marginTop: '-2rem',
-                            }}
-                        >
-                            <Image src='/5.png' alt='' width={2400} height={100} />.
+                        <div>
+                            <Image src='/5.png' alt='' width={1000} height={100} />.
                         </div>
                     </div>
                     <div
@@ -379,6 +359,7 @@ const LP = () => {
                             alignItems: 'center',
                             justifyContent: 'center',
                             fontFamily: 'var(--font-roboto)',
+                            paddingBottom: '2rem',
                         }}
                     >
                         <div className={styles.divider} style={{ marginTop: '-0.5rem' }}></div>
@@ -386,7 +367,7 @@ const LP = () => {
                             style={{
                                 fontSize: '2.5rem',
 
-                                margin: '4rem 4rem 2rem',
+                                margin: '2rem 4rem 2rem',
                                 fontWeight: 'bold',
                                 alignSelf: 'flex-start',
                             }}
@@ -398,18 +379,19 @@ const LP = () => {
                                 display: 'flex',
                                 alignItems: 'flex-start',
                                 justifyContent: 'space-between',
+                                width: '100%',
+                                padding: '0 4rem',
                             }}
                         >
                             <div
                                 style={{
-                                    margin: '0 4rem 2rem 4rem',
+                                    width: '30%',
                                 }}
                             >
                                 <h2
                                     style={{
-                                        fontSize: '1.7rem',
+                                        fontSize: '1.5rem',
                                         fontWeight: 'bold',
-                                        alignSelf: 'flex-start',
                                     }}
                                 >
                                     A PLATAFORMA
@@ -417,7 +399,7 @@ const LP = () => {
                                 <div className={styles.divider}></div>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -425,7 +407,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -434,7 +416,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 0 0',
                                     }}
                                 >
@@ -443,14 +425,13 @@ const LP = () => {
                             </div>
                             <div
                                 style={{
-                                    margin: '0 4rem 2rem 4rem',
+                                    width: '30%',
                                 }}
                             >
                                 <h2
                                     style={{
-                                        fontSize: '1.7rem',
+                                        fontSize: '1.5rem',
                                         fontWeight: 'bold',
-                                        alignSelf: 'flex-start',
                                     }}
                                 >
                                     EMPRESAS
@@ -458,7 +439,7 @@ const LP = () => {
                                 <div className={styles.divider}></div>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -466,7 +447,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -475,7 +456,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 0 0',
                                     }}
                                 >
@@ -484,14 +465,13 @@ const LP = () => {
                             </div>
                             <div
                                 style={{
-                                    margin: '0 4rem 2rem 4rem',
+                                    width: '30%',
                                 }}
                             >
                                 <h2
                                     style={{
-                                        fontSize: '1.7rem',
+                                        fontSize: '1.5rem',
                                         fontWeight: 'bold',
-                                        alignSelf: 'flex-start',
                                     }}
                                 >
                                     PRESTADORES
@@ -499,7 +479,7 @@ const LP = () => {
                                 <div className={styles.divider}></div>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -508,7 +488,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 2rem 0',
                                     }}
                                 >
@@ -516,7 +496,7 @@ const LP = () => {
                                 </p>
                                 <p
                                     style={{
-                                        fontSize: '1.2rem',
+                                        fontSize: '1rem',
                                         margin: '2rem 0 0 0',
                                     }}
                                 >
@@ -538,7 +518,7 @@ const LP = () => {
                     >
                         <h1
                             style={{
-                                fontSize: '3rem',
+                                fontSize: '2rem',
                                 fontWeight: 'bold',
                                 textAlign: 'center',
                             }}
@@ -567,15 +547,15 @@ const LP = () => {
                                     backgroundColor: '#f4f2f1',
                                     borderRadius: '3rem',
                                     padding: '2rem 4rem',
-                                    fontSize: '1.5rem',
-                                    height: '30rem',
-                                    gap: '1.5rem',
+                                    fontSize: '1rem',
+                                    height: '20rem',
+                                    gap: '1rem',
                                     boxShadow: '0px 0px 10px -4px rgba(33, 31, 31, 0.61)',
                                 }}
                             >
                                 <h1
                                     style={{
-                                        fontSize: '3rem',
+                                        fontSize: '2rem',
                                         fontWeight: 'bold',
                                     }}
                                 >
@@ -597,15 +577,15 @@ const LP = () => {
                                     backgroundColor: '#f4f2f1',
                                     borderRadius: '3rem',
                                     padding: '2rem 4rem',
-                                    fontSize: '1.5rem',
-                                    height: '30rem',
-                                    gap: '1.5rem',
+                                    fontSize: '1rem',
+                                    height: '20rem',
+                                    gap: '1rem',
                                     boxShadow: '0px 0px 10px -4px rgba(33, 31, 31, 0.61)',
                                 }}
                             >
                                 <h1
                                     style={{
-                                        fontSize: '3rem',
+                                        fontSize: '2rem',
                                         fontWeight: 'bold',
                                     }}
                                 >
@@ -638,7 +618,7 @@ const LP = () => {
                         <div className={styles.divider}></div>
                         <h1
                             style={{
-                                fontSize: '3rem',
+                                fontSize: '2rem',
                                 textAlign: 'center',
                                 fontWeight: 'bold',
                                 margin: '4rem 0',
@@ -647,46 +627,15 @@ const LP = () => {
                             JUNTE-SE À LINKME TUR E FAÇA PARTE DE UM ECOSSISTEMA TURÍSTICO MAIS
                             CONECTADO, INOVADOR E SUSTENTÁVEL.
                         </h1>
-                        <button>
-                            <div
-                                style={{
-                                    backgroundColor: '#e6f4e7 ',
-                                    color: '#535353',
-                                    fontFamily: 'var(--font-roboto)',
-                                    fontSize: '2rem',
-                                    fontWeight: 'bold',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-between',
-                                    borderRadius: '20rem',
-                                    height: '4rem',
-                                    width: '20rem',
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        borderRadius: '50%',
-                                        width: '4rem',
-                                        height: '4rem',
-                                        overflow: 'hidden',
-                                    }}
-                                >
-                                    <Image
-                                        src='/iconcadastro.jpeg'
-                                        alt='iconsend'
-                                        width={100}
-                                        height={100}
-                                    />
-                                </div>
-                                <div
-                                    style={{
-                                        marginRight: '20px',
-                                    }}
-                                >
-                                    <h1>CADASTRE-SE</h1>
-                                </div>
-                            </div>
-                        </button>
+                        <ButtonRegister
+                            title='CADASTRE_SE'
+                            action={() => {
+                                const form = document.getElementById('formLP');
+                                if (form) {
+                                    form.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                        />
                     </div>
                 </div>
             </div>

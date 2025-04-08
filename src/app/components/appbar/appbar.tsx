@@ -1,5 +1,5 @@
 'use client';
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from '@heroui/react';
+import { Navbar, NavbarBrand } from '@heroui/react';
 
 export const LinkMeTurLogo = () => {
     return (
@@ -102,11 +102,11 @@ export const LinkMeTurLogo = () => {
 
 export default function AppBar() {
     return (
-        <Navbar maxWidth='full' shouldHideOnScroll isBlurred={false} isBordered >
+        <Navbar maxWidth='sm'>
             <NavbarBrand>
                 <LinkMeTurLogo />
             </NavbarBrand>
-            <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+            {/* <Navbar className='hidden sm:flex gap-4' justify='center'>
                 <NavbarItem>
                     <Link color='foreground' href='#'>
                         Features
@@ -122,8 +122,8 @@ export default function AppBar() {
                         Integrations
                     </Link>
                 </NavbarItem>
-            </NavbarContent>
-            <NavbarContent justify='end'>
+            </Navbar> */}
+            {/* <NavbarContent justify='end'>
                 <NavbarItem className='hidden lg:flex'>
                     <Link href='#'>Entrar</Link>
                 </NavbarItem>
@@ -132,7 +132,7 @@ export default function AppBar() {
                         Cadastre-se
                     </Button>
                 </NavbarItem>
-            </NavbarContent>
+            </NavbarContent> */}
         </Navbar>
     );
 }
