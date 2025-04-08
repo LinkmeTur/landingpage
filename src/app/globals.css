@@ -17,11 +17,10 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: '100vh';
     width: '100vw';
     overflow-x: hidden;
 }
@@ -35,34 +34,4 @@ svg text {
     stroke-width: 2;
     stroke: #88a08b;
     font-size: 50px;
-}
-
-@keyframes stroke {
-    0% {
-        opacity: 0;
-        fill: rgba(189, 204, 192, 0);
-        stroke: rgba(136, 160, 139, 1);
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 50%;
-        stroke-width: 2;
-    }
-    20% {
-        opacity: 1;
-    }
-    70% {
-        fill: rgba(189, 204, 192, 0);
-        stroke: rgba(136, 160, 139, 1);
-    }
-    80% {
-        fill: rgba(189, 204, 192, 0);
-        stroke: rgba(136, 160, 139, 1);
-        stroke-width: 3;
-    }
-    100% {
-        fill: rgba(189, 204, 192, 1);
-        stroke: rgba(136, 160, 139, 0);
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 50% 0;
-        stroke-width: 0;
-    }
 }

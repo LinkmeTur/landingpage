@@ -6,12 +6,19 @@
     width: 100%;
     padding: 0 4rem;
 }
+.bg1Mobile {
+    background-image: url('/1.png');
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    padding: 0 2rem;
+}
 
 .bg1text {
     display: flow;
     float: left;
     width: 55%;
-    font-family: var(--font-roboto);
     box-shadow: 0px 0px 40px 50px rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.3);
@@ -23,38 +30,59 @@
     line-height: 5rem;
     margin-top: 1.5rem;
 }
-
 .bg1texth2 {
     font-size: 1.3rem;
     font-weight: lighter;
     margin: 1rem 1rem 1rem 0;
 }
+.bg1texth1Mobile {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
 
-.bg1textp {
+.bg1textMobile {
+    width: 100%;
+    box-shadow: 0px 0px 40px 50px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg1texth2Mobile {
     font-size: 1rem;
     font-weight: lighter;
-
-    margin-top: 1rem;
+    margin: 1rem 1rem 1rem 0;
 }
 
 .bg2 {
     background-image: url('/2.png');
     background-size: cover;
     background-position: center;
-    height: 55%;
+    height: 52%;
     width: 100%;
+}
+.bg2Mobile {
+    background-image: url('/2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bg3 {
     background-image: url('/3.png');
     background-size: cover;
     background-position: center;
-    height: 100%;
     width: 100%;
 }
 
 .content {
     background-color: rgba(83, 83, 83, 0.5);
-    height: 100%;
+    height: inherit;
+
     color: white;
 }
 
