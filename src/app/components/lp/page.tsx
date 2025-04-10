@@ -5,7 +5,9 @@ import LpDesk from './lp-desk';
 
 const LandingPage = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
+    const [isWidth, setIsWidth] = useState<number>(0);
     useEffect(() => {
+        setIsWidth(window.innerWidth);
         const handleResize = () => {
             if (window.innerWidth <= 768) {
                 setIsMobile(true);
@@ -19,7 +21,7 @@ const LandingPage = () => {
         };
     }, []);
 
-    if (window.innerWidth <= 768 || isMobile) {
+    if (isWidth <= 768 || isMobile) {
         return <LpMobile />;
     }
     return <LpDesk />;
