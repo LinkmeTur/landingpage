@@ -177,7 +177,7 @@ const LpDesk = () => {
                             }}
                         >
                             <h1>
-                                POR QUE ECOLHER <br /> A LINK ME TUR?
+                                POR QUE ESCOLHER <br /> A LINK ME TUR?
                             </h1>
                         </div>
                         <div
