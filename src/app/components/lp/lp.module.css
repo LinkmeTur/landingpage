@@ -77,12 +77,12 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .content {
-    background-color: rgba(83, 83, 83, 0.5);
+    background-color: rgba(83, 83, 83, 0.1);
     height: inherit;
-
     color: white;
 }
 
