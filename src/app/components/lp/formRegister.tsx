@@ -48,7 +48,7 @@ const FormRegister = () => {
         const formData = {
             name,
             email,
-            whatsapp,
+            whatsapp: formatPhone(whatsapp),
             estado,
             cidade,
             ramo,
