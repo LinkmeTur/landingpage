@@ -431,7 +431,7 @@ const LpDesk = () => {
                                     fontWeight: 'bold',
                                 }}
                             >
-                                EMPRESAS
+                                EMPRESAS DE TURISMO
                             </h2>
                             <div className={styles.divider}></div>
                             <AppAccordion
@@ -474,7 +474,7 @@ const LpDesk = () => {
                                     fontWeight: 'bold',
                                 }}
                             >
-                                PRESTADORES
+                                PRESTADORES DE SERVIÇOS PARA O TURISMO
                             </h2>
                             <div className={styles.divider}></div>
                             <AppAccordion
@@ -565,7 +565,7 @@ const LpDesk = () => {
                                     fontWeight: 'bold',
                                 }}
                             >
-                                EMPRESAS
+                                EMPRESAS DE TURISMO
                             </h1>
                             <p> Encontre prestadores qualificados em minutos.</p>
                             <p> Reduza custos e tempo na contratação.</p>
@@ -593,7 +593,7 @@ const LpDesk = () => {
                                     fontWeight: 'bold',
                                 }}
                             >
-                                PRESTADORES
+                                PRESTADORES DE SERVIÇOS PARA O TURISMO
                             </h1>
                             <p>Ganhe visibilidade e conecte-se com empresas do setor turístico.</p>
                             <p> Reduza o tempo e os custos de captação de clientes.</p>

@@ -13,6 +13,31 @@ const FormRegister = () => {
     const [pesquisa, setPesquisa] = useState('');
     const [lead, setLead] = useState('');
 
+    const formatPhone = (value: string): string => {
+        const cleaned = value.replace(/\D/g, ''); // Remove caracteres não numéricos
+        const length = cleaned.length;
+        if (length > 11) return cleaned.slice(0, 11); // Garante no máximo 11 dígitos
+
+        if (length <= 1) {
+            return cleaned;
+        } else if (length <= 2) {
+            return `(${cleaned}`;
+        } else if (length <= 3) {
+            return `(${cleaned.slice(0, 2)}) ${cleaned.slice(2)}`;
+        } else if (length <= 7) {
+            return `(${cleaned.slice(0, 2)}) ${cleaned.slice(2, 3)} ${cleaned.slice(3)}`;
+        } else {
+            return `(${cleaned.slice(0, 2)}) ${cleaned.slice(2, 3)} ${cleaned.slice(
+                3,
+                7,
+            )}-${cleaned.slice(7)}`;
+        }
+    };
+
+    const validatePhone = (value: string): boolean => {
+        return value.replace(/\D/g, '').length === 11; // Verifica se há exatamente 11 dígitos
+    };
+
     const handleSubmit = async () => {
         // Validações
         if (!name || !email || !whatsapp || !estado || !cidade || !ramo || !pesquisa || !lead) {
@@ -77,10 +102,17 @@ const FormRegister = () => {
             />
             <Input
                 type='text'
-                label={<h1 className='text-default-900'>Whatsapp </h1>}
-                value={whatsapp}
-                onChange={(e) => setWhatsapp(e.target.value)}
+                label={<h1 className='text-default-900'>WhatsApp</h1>}
+                value={formatPhone(whatsapp)}
+                onChange={(e) => setWhatsapp(formatPhone(e.target.value))}
+                placeholder='(XX) X XXXX-XXXX'
+                validate={(value) =>
+                    validatePhone(value)
+                        ? null
+                        : 'Número inválido! Insira os 11 dígitos corretamente.'
+                }
             />
+
             <Input
                 type='text'
                 label={<h1 className='text-default-900'>Estado</h1>}
