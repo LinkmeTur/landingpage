@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
         return [
             {
                 source: '/',
-                destination: '/app',
+                destination: '/(pages)/app',
                 has: [{ type: 'host', value: 'app.linkmetur.com.br' }],
             },
             {
