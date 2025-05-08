@@ -1,13 +1,13 @@
 'use client';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+// import { usePathname, useSearchParams } from 'next/navigation';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import { Form, Input, Button } from '@heroui/react';
 import { formatPhone } from '@/app/functions/formatPhone';
 import Image from 'next/image';
 export default function Signin() {
-    const pathname = usePathname();
-    const searchParams = useSearchParams();
-    useEffect(() => {}, [pathname, searchParams]);
+    // const pathname = usePathname();
+    // const searchParams = useSearchParams();
+    // useEffect(() => {}, [pathname, searchParams]);
     const [inputValue, setInputValue] = useState('');
     const [password, setPassword] = useState('');
     const [submitted, setSubmitted] = useState<{
