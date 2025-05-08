@@ -1,5 +1,5 @@
 'use client';
-import AppAccordion from '../wrapper-accorddion/wrapper-accorddion';
+import AppAccordion from '../../../../components/wrapper-accorddion/wrapper-accorddion';
 import ButtonRegister from './buttonRegister';
 import FormRegister from './formRegister';
 import styles from './lp.module.css';

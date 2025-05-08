@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
-import LpMobile from './lp-mobile';
-import LpDesk from './lp-desk';
+import LpMobile from './components/lp/lp-mobile';
+import LpDesk from './components/lp/lp-desk';
+import AppBar from '@/app/components/appbar/appbar';
 
 const LandingPage = () => {
     const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -20,11 +21,12 @@ const LandingPage = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-    if (isWidth <= 768 || isMobile) {
-        return <LpMobile />;
-    }
-    return <LpDesk />;
+    return (
+        <>
+            <AppBar />
+            {isWidth <= 768 || isMobile ? <LpMobile /> : <LpDesk />}
+        </>
+    );
 };
 
 export default LandingPage;

@@ -7,14 +7,31 @@ const nextConfig: NextConfig = {
         return [
             {
                 source: '/',
-                destination: '/app',
+                destination: '/pages/app',
+                permanent: false,
+            },
+            {
+                source: '/',
+                destination: '/pages/app',
                 has: [{ type: 'host', value: 'app.linkmetur.com.br' }],
                 permanent: false, // Use "true" se quiser que o redirecionamento seja permanente
             },
             {
                 source: '/',
-                destination: '/blog',
+                destination: '/pages/blog',
                 has: [{ type: 'host', value: 'blog.linkmetur.com.br' }],
+                permanent: false,
+            },
+            {
+                source: '/',
+                destination: '/pages/learning',
+                has: [{ type: 'host', value: 'academy.linkmetur.com.br' }],
+                permanent: false,
+            },
+            {
+                source: '/',
+                destination: '/pages/system',
+                has: [{ type: 'host', value: 'commandcenter.linkmetur.com.br' }],
                 permanent: false,
             },
         ];
@@ -24,18 +41,18 @@ const nextConfig: NextConfig = {
         return [
             {
                 source: '/',
-                destination: '/app',
+                destination: '/pages/app',
                 has: [{ type: 'host', value: 'app.linkmetur.com.br' }],
             },
             {
                 source: '/',
-                destination: '/blog',
+                destination: '/pages/blog',
                 has: [{ type: 'host', value: 'blog.linkmetur.com.br' }],
             },
             {
                 source: '/',
-                destination: '/system',
-                has: [{ type: 'host', value: 'system.linkmetur.com.br' }],
+                destination: '/pages/system',
+                has: [{ type: 'host', value: 'commandcenter.linkmetur.com.br' }],
             },
         ];
     },

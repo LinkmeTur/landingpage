@@ -4,7 +4,7 @@ import ButtonRegister from './buttonRegister';
 import FormRegister from './formRegister';
 import styles from './lp.module.css';
 import Image from 'next/image';
-import AppAccordion from '../wrapper-accorddion/wrapper-accorddion';
+import AppAccordion from '../../../../components/wrapper-accorddion/wrapper-accorddion';
 
 const LpDesk = () => {
     return (
