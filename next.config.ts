@@ -5,15 +5,15 @@ const nextConfig: NextConfig = {
 
     async redirects() {
         return [
+            // {
+            //     source: '/',
+            //     destination: '/pages/app',
+            //     permanent: false,
+            // },
             {
                 source: '/',
-                destination: '/pages/app',
-                permanent: false,
-            },
-            {
-                source: '/',
-                destination: '/pages/app',
-                has: [{ type: 'host', value: 'app.linkmetur.com.br' }],
+                destination: '/pages/landingPage',
+                has: [{ type: 'host', value: 'linkmetur.com.br' }],
                 permanent: false, // Use "true" se quiser que o redirecionamento seja permanente
             },
             {
@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
 
     async rewrites() {
         return [
+            {
+                source: '/',
+                destination: '/pages/landingPage',
+                has: [{ type: 'host', value: 'linkmetur.com.br' }],
+            },
             {
                 source: '/',
                 destination: '/pages/app',
