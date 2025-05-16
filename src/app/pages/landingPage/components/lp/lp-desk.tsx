@@ -5,6 +5,7 @@ import FormRegister from './formRegister';
 import styles from './lp.module.css';
 import Image from 'next/image';
 import AppAccordion from '../../../../components/wrapper-accorddion/wrapper-accorddion';
+import Footer from './footer';
 
 const LpDesk = () => {
     return (
@@ -636,6 +637,7 @@ const LpDesk = () => {
                         }}
                     />
                 </div>
+                <Footer ismobile={false} />
             </div>
         </div>
     );
