@@ -9,8 +9,14 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@emotion/cache": "^11.14.0",
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
         "@heroui/react": "^2.7.5",
         "@lottiefiles/dotlottie-react": "^0.13.0",
+        "@mui/icons-material": "^7.1.0",
+        "@mui/material": "^7.1.0",
+        "@mui/material-nextjs": "^7.1.0",
         "framer-motion": "^12.4.11",
         "next": "15.1.7",
         "next-seo": "^6.6.0",
