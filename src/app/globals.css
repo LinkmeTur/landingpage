@@ -1,26 +1,39 @@
-@layer theme, base, mui, components, utilities;
+/* src/app/globals.css */
+
+/* 1) Importa os estilos do Tailwind (NA ORDEM) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 2) Override para MUI contained buttons */
+/*    Faz o texto ficar preto e em negrito */
+@layer components {
+  .MuiButton-root.MuiButton-contained {
+    color: #000 !important;
+    font-weight: 700 !important;
+  }
+}
+
+/* 3) Estilos globais */
 body {
-    color: #ededed;
-    background: #0a0a0a;
-    font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    width: '100vw';
-    overflow-x: hidden;
+  background: #0a0a0a;
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 svg {
-    font-family: var(--font-russo-one);
-    width: 100%;
-    height: 100%;
+  font-family: var(--font-russo-one);
+  width: 100%;
+  height: 100%;
 }
+
 svg text {
-    animation: stroke 10s infinite alternate;
-    stroke-width: 2;
-    stroke: #88a08b;
-    font-size: 50px;
+  animation: stroke 10s infinite alternate;
+  stroke-width: 2;
+  stroke: #88a08b;
+  font-size: 50px;
 }
