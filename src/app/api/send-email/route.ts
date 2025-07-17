@@ -10,13 +10,13 @@ export async function POST(request: Request) {
         port: 465,
         secure: true,
         auth: {
-            user: 'jamerson@linkmetur.com.br', // Altere para seu email
-            pass: 'jcfz frad jgve ztci', // Altere para sua senha (ou token de aplicação seguro)
+            user: process.env.NEXT_PUBLIC_MAIL_USER, // Altere para seu email
+            pass: process.env.NEXT_PUBLIC_MAIL_PASS, // Altere para sua senha (ou token de aplicação seguro)
         },
     });
     const mailOptions = {
-        from: 'jamerson@linkmetur.com.br',
-        to: 'contato@linkmetur.com.br',
+        from: process.env.NEXT_PUBLIC_MAIL_USER,
+        to: process.env.NEXT_PUBLIC_MAIL_USER,
         cc: ['linkmetur@gmail.com', 'ljames666@gmail.com'],
         subject: `Novo contato ${name},  cliente interessado`,
         text: `Há um novo cliente interessado em potencial!
