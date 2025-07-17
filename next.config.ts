@@ -7,12 +7,12 @@ const nextConfig: NextConfig = {
         return [
             {
                 source: '/',
-                destination: '/pages/landingPage',
+                destination: '/site',
                 permanent: false,
             },
             {
                 source: '/',
-                destination: '/pages/landingPage',
+                destination: '/site',
                 has: [{ type: 'host', value: 'linkmetur.com.br' }],
                 permanent: false, // Use "true" se quiser que o redirecionamento seja permanente
             },
@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
         return [
             {
                 source: '/',
-                destination: '/pages/landingPage',
+                destination: '/site',
                 has: [{ type: 'host', value: 'linkmetur.com.br' }],
             },
         ];
