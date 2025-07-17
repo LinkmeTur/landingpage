@@ -101,12 +101,19 @@ export default function Landing() {
                     turismo a prestadores de serviços especializados e qualificados.
                 </p>
                 <p className='max-w-3xl mx-auto text-gray-700 mb-4'>
-                    Unimos quem vive o turismo na prática com quem tem as soluções certas para
-                    impulsionar esse setor: profissionais de marketing, tecnologia, jurídico,
-                    contabilidade, sustentabilidade, inovação e muito mais.
+                    <b>
+                        Unimos quem vive o turismo na prática com quem tem as soluções certas para
+                        impulsionar esse setor:
+                    </b>
+                    profissionais de marketing, tecnologia, jurídico, contabilidade,
+                    sustentabilidade, inovação e muito mais.
                 </p>
                 <p className='max-w-3xl mx-auto text-gray-700 mb-8'>
-                    Valorizamos os prestadores de serviço como peças-chave da engrenagem do turismo.
+                    <b>
+                        Valorizamos os prestadores de serviço como peças-chave da engrenagem do
+                        turismo.
+                    </b>
+                    <br />
                     Eles não são apenas fornecedores, são parceiros estratégicos para o
                     desenvolvimento dos destinos. E nós acreditamos que fortalecer os bastidores do
                     turismo é essencial para que os destinos brilhem.
@@ -190,8 +197,8 @@ export default function Landing() {
                             Para empresas do turismo
                         </h3>
                         <p className='text-gray-600 mb-4'>
-                            Empresas do Trade Turístico: (Meios de hospedagem, agências, atrativos,
-                            guias, restaurantes, eventos, transporte e produtores locais)
+                            <b>Empresas do Trade Turístico:</b> Meios de hospedagem, agências,
+                            atrativos, guias, restaurantes, eventos, transporte e produtores locais
                         </p>
                         <ul className='list-disc list-inside text-gray-600 space-y-1'>
                             <li>Encontre prestadores de serviços qualificados em minutos</li>
@@ -214,8 +221,8 @@ export default function Landing() {
                             Para prestadores de serviço
                         </h3>
                         <p className='text-gray-600 mb-4'>
-                            Prestadores de Serviços: (Marketing, tecnologia, jurídico,
-                            contabilidade, ESG, inovação e mais)
+                            <b>Prestadores de Serviço:</b>
+                            Marketing, tecnologia, jurídico, contabilidade, ESG, inovação e mais
                         </p>
                         <ul className='list-disc list-inside text-gray-600 space-y-1'>
                             <li>Ganhe visibilidade e conecte-se com empresas do setor turístico</li>
@@ -368,7 +375,7 @@ export default function Landing() {
                                 convidado!
                             </p>
                             <Button
-                                href='#evento'
+                                href='https://www.sympla.com.br/evento/turismo-talks---noroeste-rs/3026401'
                                 variant='contained'
                                 size='large'
                                 sx={{
