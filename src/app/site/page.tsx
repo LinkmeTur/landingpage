@@ -37,12 +37,14 @@ export default function Landing() {
                         ))}
                     </nav>
                     <Button
-                        href='#join'
+                        href='https://linktr.ee/jcomparin'
+                        target='_blank'
                         variant='contained'
                         size='large'
                         sx={{
                             backgroundColor: CTA_BG,
-                            color: 'black',
+                            color: 'white !important',
+                            fontWeight: 'bold',
                             '&:hover': { backgroundColor: CTA_HOVER },
                             px: 6,
                             py: 1.5,
@@ -68,12 +70,14 @@ export default function Landing() {
                             Conectamos quem precisa com quem resolve
                         </p>
                         <Button
-                            href='#join'
+                            href='https://linktr.ee/jcomparin'
+                            target='_blank'
                             variant='contained'
                             size='large'
                             sx={{
                                 backgroundColor: CTA_BG,
-                                color: 'black',
+                                color: 'white !important',
+                                fontWeight: 'bold',
                                 '&:hover': { backgroundColor: CTA_HOVER },
                                 px: 8,
                                 py: 2,
@@ -243,12 +247,14 @@ export default function Landing() {
                 <div className='max-w-4xl mx-auto flex flex-col items-center'>
                     {/* CTA PRINCIPAL */}
                     <Button
-                        href='#vantagens'
+                        href='https://linktr.ee/jcomparin'
+                        target='_blank'
                         variant='contained'
                         size='large'
                         sx={{
                             backgroundColor: CTA_BG,
-                            color: 'black',
+                            color: 'white !important',
+                            fontWeight: 'bold',
                             '&:hover': { backgroundColor: CTA_HOVER },
                             px: 8,
                             py: 2,
@@ -293,12 +299,14 @@ export default function Landing() {
                         seu negócio!
                     </p>
                     <Button
-                        href='#vantagens'
+                        href='https://linktr.ee/jcomparin'
+                        target='_blank'
                         variant='contained'
                         size='large'
                         sx={{
                             backgroundColor: '#374151',
                             color: 'white !important',
+                            fontWeight: 'bold',
                             '&:hover': { backgroundColor: '#4B5563' },
                             px: 10,
                             py: 2,
@@ -376,11 +384,13 @@ export default function Landing() {
                             </p>
                             <Button
                                 href='https://www.sympla.com.br/evento/turismo-talks---noroeste-rs/3026401'
+                                target='_blank'
                                 variant='contained'
                                 size='large'
                                 sx={{
                                     backgroundColor: CTA_BG,
-                                    color: 'black',
+                                    color: 'white !important',
+                                    fontWeight: 'bold',
                                     '&:hover': { backgroundColor: CTA_HOVER },
                                     px: 6,
                                     py: 1.5,
@@ -491,23 +501,25 @@ export default function Landing() {
                         {
                             icon: '/146.png',
                             label: 'Sou empresa e quero melhorar minha experiência',
+                            url: 'https://docs.google.com/forms/d/e/1FAIpQLSf9pxhs4WONGMmRALgR5zD_zD4o5xwaXHDdEq48IrRaqGbJuA/viewform',
                         },
                         {
                             icon: '/148.png',
                             label: 'Sou prestador e quero oferecer meus serviços',
+                            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdBfvsG1FvPB3jKTAkFhS1IBzt4yCU5038ps2tt5S_bRi47SA/viewform',
                         },
                         {
                             icon: '/147.png',
                             label: 'Quero saber mais sobre o evento Turismo Talks',
+                            url: 'https://www.sympla.com.br/evento/turismo-talks-noroeste-rs/3026401',
                         },
-                    ].map(({ icon, label }) => (
-                        <div
-                            key={label}
-                            className='bg-gray-800 hover:bg-gray-700 transition rounded-2xl p-6 flex-1 flex flex-col items-center justify-center gap-4'
-                        >
-                            <Image src={icon} alt={label} width={70} height={70} />
-                            <p className='mt-2 text-white font-medium'>{label}</p>
-                        </div>
+                    ].map(({ icon, label, url }) => (
+                        <a key={label} href={url} target='_blank'>
+                            <div className='bg-gray-800 hover:bg-gray-700 transition rounded-2xl p-6 flex-1 flex flex-col items-center justify-center gap-4'>
+                                <Image src={icon} alt={label} width={70} height={70} />
+                                <p className='mt-2 text-white font-medium'>{label}</p>
+                            </div>
+                        </a>
                     ))}
                 </div>
             </section>
