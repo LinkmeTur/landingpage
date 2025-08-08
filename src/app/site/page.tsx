@@ -25,7 +25,6 @@ export default function Landing() {
                             'Vantagens',
                             'Perguntas Frequentes',
                             'Evento',
-                            'Contato',
                         ].map((item) => (
                             <a
                                 key={item}
@@ -59,7 +58,7 @@ export default function Landing() {
             </header>
 
             {/* HERO */}
-            <section id='o-que-é' className='relative h-screen w-full pt-24'>
+            <section id='hero' className='relative h-screen w-full pt-24'>
                 <Image src='/hero.jpg' alt='Banner Hero' fill className='object-cover' priority />
                 <div className='absolute inset-0 bg-black/40' />
                 <div className='absolute inset-0 flex items-center px-8 lg:px-16'>
@@ -94,8 +93,8 @@ export default function Landing() {
             </section>
 
             {/* CONECTE-SE */}
-            <section className='py-16 bg-white text-center px-8'>
-                <h2 className='text-3xl font-bold mb-4 inline-block bg-white px-4 text-black'>
+ <section id='o-que-é' className='py-16 bg-white text-center px-8'>
+    <h2 className='text-3xl font-bold mb-4 inline-block bg-white px-4 text-black'>
                     Conecte-se com quem
                     <br />
                     realmente importa
@@ -186,7 +185,7 @@ export default function Landing() {
             </section>
 
             {/* PARA QUEM É */}
-            <section id='para quem' className='py-16 px-8 bg-white text-center'>
+            <section id='para-quem' className='py-16 px-8 bg-white text-center'>
                 <h2 className='text-3xl font-bold mb-4 text-black'>Para quem é a LinkMe Tur?</h2>
                 <div className='h-1 w-24 bg-[#2BE58F] mx-auto mb-8 rounded' />
                 <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
@@ -509,7 +508,7 @@ conexão com clientes qualificados.
                     {[
                         {
                             icon: '/146.png',
-                            label: 'Sou empresa e quero melhorar minha experiência',
+                            label: 'Sou empresa e quero melhorar minha comunicação',
                             url: 'https://docs.google.com/forms/d/e/1FAIpQLSf9pxhs4WONGMmRALgR5zD_zD4o5xwaXHDdEq48IrRaqGbJuA/viewform',
                         },
                         {
