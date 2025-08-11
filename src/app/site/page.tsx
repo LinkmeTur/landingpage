@@ -1,27 +1,29 @@
 // src/app/site/page.tsx
 import Image from 'next/image';
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 export default function Landing() {
     return (
         <main className='font-sans'>
             {/* NAVBAR */}
-            <header className='fixed inset-x-0 top-0 z-50 bg-white shadow'>
-                <div className='max-w-6xl mx-auto flex items-center justify-between px-8 py-6'>
-                    <Image
-                        src='/logo-linkmetur.jpeg'
-                        alt='LinkMe Tur'
-                        width={160}
-                        height={45}
-                        priority
-                    />
-                    <nav className='hidden md:flex space-x-10 text-gray-800 text-lg'>
+            <header className='h-[100px] fixed inset-x-0 top-0 z-50 bg-white shadow'>
+                <div className=' grid grid-cols-4 md:grid-cols-6 px-8 py-2 gap-4 h-full'>
+                    <div className='flex items-center h-full'>
+                        <Image
+                            src='/logo-linkmetur.jpeg'
+                            alt='LinkMe Tur'
+                            width={160}
+                            height={100}
+                            className='h-[70%] md:h-full '
+                        />
+                    </div>
+                    <nav className='flex items-center justify-around flex-wrap col-span-2 md:col-span-4 space-x-2 md:space-x-8 text-gray-800 whitespace-nowrap text-xs md:text-lg'>
                         {[
                             'O que é',
                             'Para quem',
                             'Vantagens',
                             'Perguntas Frequentes',
-                            'Evento',
+                            'Turismo Talks',
                         ].map((item) => (
                             <a
                                 key={item}
@@ -32,32 +34,39 @@ export default function Landing() {
                             </a>
                         ))}
                     </nav>
-                    <Button
-                        href='https://linktr.ee/jcomparin'
-                        target='_blank'
-                        variant='contained'
-                        size='large'
-                        sx={{
-                            backgroundColor: '#374151',
-                            color: 'white !important',
-                            fontWeight: 'bold',
-                            '&:hover': { backgroundColor: '#4B5563' },
-                            px: 6,
-                            py: 1.5,
-                            borderRadius: '9999px',
-                            textTransform: 'none',
-                        }}
-                    >
-                        Fazer parte
-                    </Button>
+                    <div className='flex items-center justify-end'>
+                        <Button
+                            href='https://linktr.ee/jcomparin'
+                            target='_blank'
+                            variant='contained'
+                            className='rounded-full text-xs whitespace-nowrap'
+                            sx={{
+                                backgroundColor: '#374151',
+                                '&:hover': { backgroundColor: '#4B5563' },
+                                px: 4,
+                                py: 1.5,
+                            }}
+                        >
+                            <Typography
+                                className='text-xs md:text-lg'
+                                sx={{
+                                    color: 'white !important',
+                                    fontWeight: 'bold',
+                                    textTransform: 'none',
+                                }}
+                            >
+                                Fazer parte
+                            </Typography>
+                        </Button>
+                    </div>
                 </div>
             </header>
 
             {/* HERO */}
-            <section id='hero' className='relative h-screen w-full pt-24'>
+            <section id='hero' className='relative h-screen w-full '>
                 <Image src='/hero.jpg' alt='Banner Hero' fill className='object-cover' priority />
                 <div className='absolute inset-0 bg-black/40' />
-                <div className='absolute inset-0 flex items-center px-8 lg:px-16'>
+                <div className='absolute inset-0 flex items-center pt-8 px-8 lg:px-16'>
                     <div className='max-w-2xl'>
                         <h1 className='text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4'>
                             Transformamos a forma como as empresas fazem negócios com o turismo
@@ -70,18 +79,24 @@ export default function Landing() {
                             target='_blank'
                             variant='contained'
                             size='large'
+                            className='rounded-full  whitespace-nowrap'
                             sx={{
                                 backgroundColor: '#374151',
-                                color: 'white !important',
-                                fontWeight: 'bold',
                                 '&:hover': { backgroundColor: '#4B5563' },
                                 px: 8,
                                 py: 2,
-                                borderRadius: '9999px',
-                                textTransform: 'none',
                             }}
                         >
-                            Quero fazer parte dessa transformação
+                            <Typography
+                                className='text-xs md:text-lg'
+                                sx={{
+                                    color: 'white !important',
+                                    fontWeight: 'bold',
+                                    textTransform: 'none',
+                                }}
+                            >
+                                Quero fazer parte dessa transformação
+                            </Typography>
                         </Button>
                     </div>
                 </div>
