@@ -2,9 +2,6 @@
 import Image from 'next/image';
 import { Button } from '@mui/material';
 
-const CTA_BG = '#2BE58F';
-const CTA_HOVER = '#27CC7A';
-
 export default function Landing() {
     return (
         <main className='font-sans'>
@@ -35,25 +32,24 @@ export default function Landing() {
                             </a>
                         ))}
                     </nav>
-<Button
-    href='https://linktr.ee/jcomparin'
-    target='_blank'
-    variant='contained'
-    size='large'
-    sx={{
-        backgroundColor: '#374151',
-        color: 'white !important',
-        fontWeight: 'bold',
-        '&:hover': { backgroundColor: '#4B5563' },
-        px: 6,
-        py: 1.5,
-        borderRadius: '9999px',
-        textTransform: 'none',
-    }}
->
-    Fazer parte
-</Button>
-
+                    <Button
+                        href='https://linktr.ee/jcomparin'
+                        target='_blank'
+                        variant='contained'
+                        size='large'
+                        sx={{
+                            backgroundColor: '#374151',
+                            color: 'white !important',
+                            fontWeight: 'bold',
+                            '&:hover': { backgroundColor: '#4B5563' },
+                            px: 6,
+                            py: 1.5,
+                            borderRadius: '9999px',
+                            textTransform: 'none',
+                        }}
+                    >
+                        Fazer parte
+                    </Button>
                 </div>
             </header>
 
@@ -69,32 +65,31 @@ export default function Landing() {
                         <p className='text-lg md:text-xl text-white mb-8'>
                             Conectamos quem precisa com quem resolve
                         </p>
- <Button
-    href='https://linktr.ee/jcomparin'
-    target='_blank'
-    variant='contained'
-    size='large'
-    sx={{
-        backgroundColor: '#374151',
-        color: 'white !important',
-        fontWeight: 'bold',
-        '&:hover': { backgroundColor: '#4B5563' },
-        px: 8,
-        py: 2,
-        borderRadius: '9999px',
-        textTransform: 'none',
-    }}
->
-    Quero fazer parte dessa transformação
-</Button>
-
+                        <Button
+                            href='https://linktr.ee/jcomparin'
+                            target='_blank'
+                            variant='contained'
+                            size='large'
+                            sx={{
+                                backgroundColor: '#374151',
+                                color: 'white !important',
+                                fontWeight: 'bold',
+                                '&:hover': { backgroundColor: '#4B5563' },
+                                px: 8,
+                                py: 2,
+                                borderRadius: '9999px',
+                                textTransform: 'none',
+                            }}
+                        >
+                            Quero fazer parte dessa transformação
+                        </Button>
                     </div>
                 </div>
             </section>
 
             {/* CONECTE-SE */}
- <section id='o-que-é' className='py-16 bg-white text-center px-8'>
-    <h2 className='text-3xl font-bold mb-4 inline-block bg-white px-4 text-black'>
+            <section id='o-que-é' className='py-16 bg-white text-center px-8'>
+                <h2 className='text-3xl font-bold mb-4 inline-block bg-white px-4 text-black'>
                     Conecte-se com quem
                     <br />
                     realmente importa
@@ -110,6 +105,7 @@ export default function Landing() {
                         Unimos quem vive o turismo na prática com quem tem as soluções certas para
                         impulsionar esse setor:
                     </b>
+                    {/* */}
                     profissionais de marketing, tecnologia, jurídico, contabilidade,
                     sustentabilidade, inovação e muito mais.
                 </p>
@@ -226,8 +222,8 @@ export default function Landing() {
                             Para prestadores de serviço
                         </h3>
                         <p className='text-gray-600 mb-4'>
-                            <b>Prestadores de Serviço:</b>
-                            Marketing, tecnologia, jurídico, contabilidade, ESG, inovação e mais
+                            <b>Prestadores de Serviço:</b>Marketing, tecnologia, jurídico,
+                            contabilidade, ESG, inovação e mais
                         </p>
                         <ul className='list-disc list-inside text-gray-600 space-y-1'>
                             <li>Ganhe visibilidade e conecte-se com empresas do setor turístico</li>
@@ -247,25 +243,24 @@ export default function Landing() {
             <section id='vantagens' className='py-16 bg-gray-50 text-center px-8'>
                 <div className='max-w-4xl mx-auto flex flex-col items-center'>
                     {/* CTA PRINCIPAL */}
- <Button
-    href='https://linktr.ee/jcomparin'
-    target='_blank'
-    variant='contained'
-    size='large'
-    sx={{
-        backgroundColor: '#374151',
-        color: 'white !important',
-        fontWeight: 'bold',
-        '&:hover': { backgroundColor: '#4B5563' },
-        px: 8,
-        py: 2,
-        borderRadius: '9999px',
-        textTransform: 'none',
-    }}
->
-    Quero fazer parte desse ecossistema
-</Button>
-
+                    <Button
+                        href='https://linktr.ee/jcomparin'
+                        target='_blank'
+                        variant='contained'
+                        size='large'
+                        sx={{
+                            backgroundColor: '#374151',
+                            color: 'white !important',
+                            fontWeight: 'bold',
+                            '&:hover': { backgroundColor: '#4B5563' },
+                            px: 8,
+                            py: 2,
+                            borderRadius: '9999px',
+                            textTransform: 'none',
+                        }}
+                    >
+                        Quero fazer parte desse ecossistema
+                    </Button>
 
                     {/* TÍTULO */}
                     <h2 className='mt-12 text-3xl md:text-4xl font-bold text-black'>
@@ -331,17 +326,18 @@ export default function Landing() {
                     conectado, moderno e cheio de novas oportunidades para todos!
                 </h2>
 
-{/* LINHA DE DESTAQUE */}
-  <div className="h-1 w-24 bg-[#2BE58F] mx-auto rounded" />
+                {/* LINHA DE DESTAQUE */}
+                <div className='h-1 w-24 bg-[#2BE58F] mx-auto rounded' />
 
-  {/* CONTEÚDO CENTRALIZADO */}
-  <div className="mt-12 max-w-4xl mx-auto px-4">
-    <p className="text-3xl md:text-4xl font-bold leading-snug">
-      O turismo gaúcho precisa de quem acredita no seu futuro, e esse futuro <br />
-      <span className="text-[#2BE58F]">começa agora!</span>
-    </p>
-  </div>
-</section>
+                {/* CONTEÚDO CENTRALIZADO */}
+                <div className='mt-12 max-w-4xl mx-auto px-4'>
+                    <p className='text-3xl md:text-4xl font-bold leading-snug'>
+                        O turismo gaúcho precisa de quem acredita no seu futuro, e esse futuro{' '}
+                        <br />
+                        <span className='text-[#2BE58F]'>começa agora!</span>
+                    </p>
+                </div>
+            </section>
 
             {/* TURISMO TALKS */}
             <section id='evento' className='py-16 bg-gray-100'>
@@ -369,25 +365,25 @@ export default function Landing() {
                                 realizado o Lançamento Oficial da LinkMe Tur, e você é nosso
                                 convidado!
                             </p>
-<Button
-    href='https://www.sympla.com.br/evento/turismo-talks---noroeste-rs/3026401'
-    target='_blank'
-    variant='contained'
-    size='large'
-    sx={{
-        backgroundColor: '#374151',
-        color: 'white !important',
-        fontWeight: 'bold',
-        '&:hover': { backgroundColor: '#4B5563' },
-        px: 6,
-        py: 1.5,
-        borderRadius: '9999px',
-        textTransform: 'none',
-        fontSize: '1rem',
-    }}
->
-    Quero participar do evento
-</Button>
+                            <Button
+                                href='https://www.sympla.com.br/evento/turismo-talks---noroeste-rs/3026401'
+                                target='_blank'
+                                variant='contained'
+                                size='large'
+                                sx={{
+                                    backgroundColor: '#374151',
+                                    color: 'white !important',
+                                    fontWeight: 'bold',
+                                    '&:hover': { backgroundColor: '#4B5563' },
+                                    px: 6,
+                                    py: 1.5,
+                                    borderRadius: '9999px',
+                                    textTransform: 'none',
+                                    fontSize: '1rem',
+                                }}
+                            >
+                                Quero participar do evento
+                            </Button>
 
                             <ul className='mt-6 text-gray-700 space-y-2 text-base'>
                                 <li>
@@ -419,77 +415,101 @@ export default function Landing() {
                 </div>
             </section>
 
-      {/* PERGUNTAS FREQUENTES */}
-      <section id="perguntas-frequentes" className="py-16 bg-gray-800 text-white px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Perguntas Frequentes</h2>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="font-semibold mb-4">A Plataforma</h4>
-            <details className="mb-2">
-              <summary>O que é a LinkMe Tur?</summary>
-              <p className="mt-2">Somos uma plataforma digital inteligente que conecta empresas de turismo a prestadores
-de serviços qualificados, promovendo eficiência, agilidade e segurança na contratação.
-Nosso objetivo é impulsionar o crescimento colaborativo e transformar o turismo em uma
-rede de oportunidades sustentáveis e inovadoras, onde todos prosperam juntos.
-</p>
-            </details>
-            <details className="mb-2">
-              <summary>Como a LinkMe Tur conecta empresas de turismo a prestadores?</summary>
-              <p className="mt-2">Por meio de uma plataforma com filtros inteligentes, perfis detalhados e curadoria de
-serviços, facilitamos o encontro entre quem precisa de soluções e quem tem a expertise
-para entregar. Tudo de forma rápida, segura e personalizada para o setor de turismo.
-</p>
-            </details>
-            <details>
-              <summary>A LinkMe Tur é gratuita?</summary>
-              <p className="mt-2">Sim. Durante o período de testes (MVP), a plataforma será disponibilizada gratuitamente
-para empresas de turismo e prestadores de serviços. Após essa fase, os planos serão
-acessíveis e proporcionais ao porte e às necessidades de cada negócio.
-
-</p>
-            </details>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Empresas de Turismo</h4>
-            <details className="mb-2">
-              <summary>A LinkMe Tur é pra mim?</summary>
-              <p className="mt-2">Se você possui uma agência de viagens, hotel, pousada, atrativo turístico, restaurante,
-empresa de transporte, organiza experiências ou atua com guiamento e receptivo, a LinkMe
-Tur é pra você! Nossa plataforma é inclusiva e acessível, pensada tanto para profissionais
-autônomos, como guias de turismo e motoristas particulares, quanto para médias e grandes
-redes do setor. Se você vive o turismo na prática e quer crescer com mais eficiência,
-visibilidade e conexões estratégicas esse é o seu lugar.
-</p>
-            </details>
-            <details className="mb-2">
-              <summary>Quais tipos de prestadores de serviços posso encontrar na plataforma?</summary>
-              <p className="mt-2">Você encontrará empresas e profissionais nas áreas de marketing, tecnologia,
-sustentabilidade, jurídico, contabilidade, design, consultorias, treinamentos, inovação e
-muito mais. Todas as empresas que agregam valor ao turismo são bem-vindas,
-independente do tamanho ou número de colaboradores.
-</p>
-            </details>
-            <details>
-              <summary>Como a LinkMe Tur ajuda a reduzir custos e tempo na contratação?</summary>
-              <p className="mt-2">Oferecemos uma experiência simples e eficiente, com curadoria de profissionais e
-ferramentas de busca avançada. Isso reduz o tempo gasto na procura por fornecedores
-confiáveis e evita custos com contratações mal direcionadas.
-</p>
-            </details>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Prestadores de Serviços</h4>
-            <details className="mb-2">
-              <summary>Como a LinkMe Tur me ajuda a receber propostas relevantes?</summary>
-              <p className="mt-2">Com filtros inteligentes, perfis estratégicos e segmentação por interesse, a LinkMe Tur
-aproxima as demandas reais do turismo das soluções que você oferece. Quanto mais claro,
-atrativo e bem construído for o seu perfil, maiores serão suas chances de visibilidade e
-conexão com clientes qualificados.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
+            {/* PERGUNTAS FREQUENTES */}
+            <section id='perguntas-frequentes' className='py-16 bg-gray-800 text-white px-8'>
+                <h2 className='text-3xl font-bold text-center mb-8'>Perguntas Frequentes</h2>
+                <div className='max-w-6xl mx-auto grid md:grid-cols-3 gap-8'>
+                    <div>
+                        <h4 className='font-semibold mb-4'>A Plataforma</h4>
+                        <details className='mb-2'>
+                            <summary>O que é a LinkMe Tur?</summary>
+                            <p className='mt-2'>
+                                Somos uma plataforma digital inteligente que conecta empresas de
+                                turismo a prestadores de serviços qualificados, promovendo
+                                eficiência, agilidade e segurança na contratação. Nosso objetivo é
+                                impulsionar o crescimento colaborativo e transformar o turismo em
+                                uma rede de oportunidades sustentáveis e inovadoras, onde todos
+                                prosperam juntos.
+                            </p>
+                        </details>
+                        <details className='mb-2'>
+                            <summary>
+                                Como a LinkMe Tur conecta empresas de turismo a prestadores?
+                            </summary>
+                            <p className='mt-2'>
+                                Por meio de uma plataforma com filtros inteligentes, perfis
+                                detalhados e curadoria de serviços, facilitamos o encontro entre
+                                quem precisa de soluções e quem tem a expertise para entregar. Tudo
+                                de forma rápida, segura e personalizada para o setor de turismo.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>A LinkMe Tur é gratuita?</summary>
+                            <p className='mt-2'>
+                                Sim. Durante o período de testes (MVP), a plataforma será
+                                disponibilizada gratuitamente para empresas de turismo e prestadores
+                                de serviços. Após essa fase, os planos serão acessíveis e
+                                proporcionais ao porte e às necessidades de cada negócio.
+                            </p>
+                        </details>
+                    </div>
+                    <div>
+                        <h4 className='font-semibold mb-4'>Empresas de Turismo</h4>
+                        <details className='mb-2'>
+                            <summary>A LinkMe Tur é pra mim?</summary>
+                            <p className='mt-2'>
+                                Se você possui uma agência de viagens, hotel, pousada, atrativo
+                                turístico, restaurante, empresa de transporte, organiza experiências
+                                ou atua com guiamento e receptivo, a LinkMe Tur é pra você! Nossa
+                                plataforma é inclusiva e acessível, pensada tanto para profissionais
+                                autônomos, como guias de turismo e motoristas particulares, quanto
+                                para médias e grandes redes do setor. Se você vive o turismo na
+                                prática e quer crescer com mais eficiência, visibilidade e conexões
+                                estratégicas esse é o seu lugar.
+                            </p>
+                        </details>
+                        <details className='mb-2'>
+                            <summary>
+                                Quais tipos de prestadores de serviços posso encontrar na
+                                plataforma?
+                            </summary>
+                            <p className='mt-2'>
+                                Você encontrará empresas e profissionais nas áreas de marketing,
+                                tecnologia, sustentabilidade, jurídico, contabilidade, design,
+                                consultorias, treinamentos, inovação e muito mais. Todas as empresas
+                                que agregam valor ao turismo são bem-vindas, independente do tamanho
+                                ou número de colaboradores.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Como a LinkMe Tur ajuda a reduzir custos e tempo na contratação?
+                            </summary>
+                            <p className='mt-2'>
+                                Oferecemos uma experiência simples e eficiente, com curadoria de
+                                profissionais e ferramentas de busca avançada. Isso reduz o tempo
+                                gasto na procura por fornecedores confiáveis e evita custos com
+                                contratações mal direcionadas.
+                            </p>
+                        </details>
+                    </div>
+                    <div>
+                        <h4 className='font-semibold mb-4'>Prestadores de Serviços</h4>
+                        <details className='mb-2'>
+                            <summary>
+                                Como a LinkMe Tur me ajuda a receber propostas relevantes?
+                            </summary>
+                            <p className='mt-2'>
+                                Com filtros inteligentes, perfis estratégicos e segmentação por
+                                interesse, a LinkMe Tur aproxima as demandas reais do turismo das
+                                soluções que você oferece. Quanto mais claro, atrativo e bem
+                                construído for o seu perfil, maiores serão suas chances de
+                                visibilidade e conexão com clientes qualificados.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
 
             {/* CALL TO ACTION FINAL */}
             <section id='cta-final' className='py-16 bg-gray-900 text-white text-center px-8'>
