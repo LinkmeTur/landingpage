@@ -353,70 +353,70 @@ export default function Landing() {
                     </p>
                 </div>
             </section>
+{/* TURISMO TALKS */}
+<section id='Turismo-Talks' className='py-16 bg-gray-100'> 
+  <div className='max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden'>
+    <div className='grid md:grid-cols-2 gap-8 px-8 py-10 items-center'>
 
- {/* TURISMO TALKS */}
-<section id='Turismo Talks' className='py-16 bg-gray-100'>
-    <div className='max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden'>
-        <div className='grid md:grid-cols-2 gap-8 px-8 py-10 items-center'>
-            {/* left column: logo + copy */}
-            <div className='space-y-6'>
-                <div className='w-full flex justify-center md:justify-start'>
-                    <Image
-                        src='/turismo-talks-logo.png'
-                        alt='Turismo Talks Logo'
-                        width={600}
-                        height={120}
-                        className='object-contain'
-                        priority
-                    />
-                </div>
-                            </div>
+      {/* left column: logo + texts + button */}
+      <div className='space-y-6'>
+        <div className='w-full flex justify-center md:justify-start'>
+          <Image
+            src='/turismo-talks-logo.png'
+            alt='Turismo Talks Logo'
+            width={600}
+            height={120}
+            className='object-contain'
+            priority
+          />
+        </div>
 
-                            <h3 className='text-3xl md:text-4xl font-bold text-black'>
-                                Participe do Turismo Talks: o evento que marca o início dessa
-                                jornada.
-                            </h3>
-                            <p className='text-lg md:text-xl text-gray-700'>
-                                Com a participação de diversos atores do trade turístico,
-                                representantes dos governos, academia e parceiros estratégicos será
-                                realizado o Lançamento Oficial da LinkMe Tur, e você é nosso
-                                convidado!
-                            </p>
-                            <Button
-                                href='https://www.instagram.com/reel/DMffP1ox9JP/?igsh=MXU0amN1cDNpOGloeA=='
-                                target='_blank'
-                                variant='contained'
-                                size='large'
-                                sx={{
-                                    backgroundColor: '#374151',
-                                    color: 'white !important',
-                                    fontWeight: 'bold',
-                                    '&:hover': { backgroundColor: '#4B5563' },
-                                    px: 6,
-                                    py: 1.5,
-                                    borderRadius: '9999px',
-                                    textTransform: 'none',
-                                    fontSize: '1rem',
-                                }}
-                            >
-                                Veja como foi a primeira edição
-                            </Button>
-                          <div className='mt-6 text-gray-700 text-base'>
-                           Teremos novidades em breve
-                          </div>
-                        {/* right column: hero photo */}
-                        <div className='relative w-full h-60 md:h-80 lg:h-[28rem]'>
-                            <Image
-                                src='/evento-foto.jpg'
-                                alt='Foto do evento'
-                                fill
-                                className='object-cover rounded-xl'
-                                priority
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <h3 className='text-3xl md:text-4xl font-bold text-black'>
+          Participe do Turismo Talks: o evento que marca o início dessa jornada.
+        </h3>
+
+        <p className='text-lg md:text-xl text-gray-700'>
+          Com a participação de diversos atores do trade turístico, representantes dos governos, academia e parceiros estratégicos será realizado o Lançamento Oficial da LinkMe Tur, e você é nosso convidado!
+        </p>
+
+        <Button
+          href='https://www.instagram.com/reel/DMffP1ox9JP/?igsh=MXU0amN1cDNpOGloeA=='
+          target='_blank'
+          variant='contained'
+          size='large'
+          sx={{
+            backgroundColor: '#374151',
+            color: 'white !important',
+            fontWeight: 'bold',
+            '&:hover': { backgroundColor: '#4B5563' },
+            px: 6,
+            py: 1.5,
+            borderRadius: '9999px',
+            textTransform: 'none',
+            fontSize: '1rem',
+          }}
+        >
+          Veja como foi a primeira edição
+        </Button>
+
+        <div className='mt-6 text-gray-700 text-base'>
+          Teremos novidades em breve
+        </div>
+      </div>
+
+      {/* right column: hero photo */}
+      <div className='relative w-full h-60 md:h-80 lg:h-[28rem]'>
+        <Image
+          src='/evento-foto.jpg'
+          alt='Foto do evento'
+          fill
+          className='object-cover rounded-xl'
+          priority
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
             {/* PERGUNTAS FREQUENTES */}
             <section id='perguntas-frequentes' className='py-16 bg-gray-800 text-white px-8'>
