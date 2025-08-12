@@ -195,65 +195,61 @@ export default function Landing() {
                 </div>
             </section>
 
-            {/* PARA QUEM É */}
-            <section id='para-quem' className='py-16 px-8 bg-white text-center'>
-                <h2 className='text-3xl font-bold mb-4 text-black'>Para quem é a LinkMe Tur?</h2>
-                <div className='h-1 w-24 bg-[#2BE58F] mx-auto mb-8 rounded' />
-                <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
-                    {/* Card: Para empresas do turismo */}
-                    <div className='p-6 bg-gray-50 rounded-2xl shadow text-left'>
-                        <Image
-                            src='/141.png'
-                            alt='Ícone Empresas do Turismo'
-                            width={75}
-                            height={75}
-                            className='mx-auto mb-4'
-                        />
-                        <h3 className='text-xl font-semibold mb-2 text-black'>
-                            Para empresas do turismo
-                        </h3>
-                        <p className='text-gray-600 mb-4'>
-                            <b>Empresas do Trade Turístico:</b> Meios de hospedagem, agências,
-                            atrativos, guias, restaurantes, eventos, transporte e produtores locais
-                        </p>
-                        <ul className='list-disc list-inside text-gray-600 space-y-1'>
-                            <li>Encontre prestadores de serviços qualificados em minutos</li>
-                            <li>Reduza custos e tempo na contratação</li>
-                            <li>Compare avaliações de prestadores e reduza riscos</li>
-                            <li>Acesse soluções sob medida para crescer com eficiência</li>
-                        </ul>
-                    </div>
-
-                    {/* Card: Para prestadores de serviço */}
-                    <div className='p-6 bg-gray-50 rounded-2xl shadow text-left'>
-                        <Image
-                            src='/144.png'
-                            alt='Ícone Prestadores de Serviço'
-                            width={70}
-                            height={70}
-                            className='mx-auto mb-4'
-                        />
-                        <h3 className='text-xl font-semibold mb-2 text-black'>
-                            Para prestadores de serviço
-                        </h3>
-                        <p className='text-gray-600 mb-4'>
-                            <b>Prestadores de Serviço:</b>Marketing, tecnologia, jurídico,
-                            contabilidade, ESG, inovação e mais
-                        </p>
-                        <ul className='list-disc list-inside text-gray-600 space-y-1'>
-                            <li>Ganhe visibilidade e conecte-se com empresas do setor turístico</li>
-                            <li>Reduza o tempo e os custos na captação de clientes</li>
-                            <li>
-                                Conecte-se a oportunidades reais e que precisam dos seus serviços
-                            </li>
-                            <li>
-                                Destaque-se em uma plataforma que valoriza a qualidade e a inovação
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
+{/* PARA QUEM É */} 
+<section id='para-quem' className='py-16 px-8 bg-white text-center'>
+    <h2 className='text-3xl font-bold mb-4 text-black'>Para quem é a LinkMe Tur?</h2>
+    <div className='h-1 w-24 bg-[#2BE58F] mx-auto mb-8 rounded' />
+    <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
+        {/* Card: Para empresas do turismo */}
+        <div className='p-6 bg-gray-50 rounded-2xl shadow text-left'>
+            <Image
+                src='/141.png'
+                alt='Ícone Empresas do Turismo'
+                width={75}
+                height={75}
+                className='mx-auto mb-4'
+            />
+            <h3 className='text-xl font-semibold mb-2 text-black'>
+                {/* removido texto */}
+            </h3>
+            <p className='text-gray-600 mb-4'>
+                <b>Empresas do Trade Turístico:</b> Meios de hospedagem, agências,
+                atrativos, guias, restaurantes, eventos, transporte e produtores locais
+            </p>
+            <ul className='list-disc list-inside text-gray-600 space-y-1'>
+                <li>Encontre prestadores de serviços qualificados em minutos</li>
+                <li>Reduza custos e tempo na contratação</li>
+                <li>Compare avaliações de prestadores e reduza riscos</li>
+                <li>Acesse soluções sob medida para crescer com eficiência</li>
+            </ul>
+        </div>
+        {/* Card: Para prestadores de serviço */}
+        <div className='p-6 bg-gray-50 rounded-2xl shadow text-left'>
+            <Image
+                src='/144.png'
+                alt='Ícone Prestadores de Serviço'
+                width={70}
+                height={70}
+                className='mx-auto mb-4'
+            />
+            <h3 className='text-xl font-semibold mb-2 text-black'>
+                {/* removido texto */}
+            </h3>
+            <p className='text-gray-600 mb-4'>
+                <b>Prestadores de Serviço:</b>Marketing, tecnologia, jurídico,
+                contabilidade, ESG, inovação e mais
+            </p>
+            <ul className='list-disc list-inside text-gray-600 space-y-1'>
+                <li>Ganhe visibilidade e conecte-se com empresas do setor turístico</li>
+                <li>Reduza o tempo e os custos na captação de clientes</li>
+                    Conecte-se a oportunidades reais e que precisam dos seus serviços
+                <li>
+                    Destaque-se em uma plataforma que valoriza a qualidade e a inovação
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
             {/* SEÇÃO “QUERO FAZER PARTE DESSE ECOSSISTEMA” */}
             <section id='vantagens' className='py-16 bg-gray-50 text-center px-8'>
                 <div className='max-w-4xl mx-auto flex flex-col items-center'>
