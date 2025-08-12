@@ -354,22 +354,24 @@ export default function Landing() {
                 </div>
             </section>
 
-            {/* TURISMO TALKS */}
-            <section id='evento' className='py-16 bg-gray-100'>
-                <div className='max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden'>
-                    <div className='grid md:grid-cols-2 gap-8 px-8 py-10 items-center'>
-                        {/* left column: logo + copy */}
-                        <div className='space-y-6'>
-                            <div className='w-full flex justify-center md:justify-start'>
-                                <Image
-                                    src='/turismo-talks-logo.png'
-                                    alt='Turismo Talks Logo'
-                                    width={600}
-                                    height={120}
-                                    objectFit='contain'
-                                    priority
-                                />
+ {/* TURISMO TALKS */}
+<section id='Turismo Talks' className='py-16 bg-gray-100'>
+    <div className='max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden'>
+        <div className='grid md:grid-cols-2 gap-8 px-8 py-10 items-center'>
+            {/* left column: logo + copy */}
+            <div className='space-y-6'>
+                <div className='w-full flex justify-center md:justify-start'>
+                    <Image
+                        src='/turismo-talks-logo.png'
+                        alt='Turismo Talks Logo'
+                        width={600}
+                        height={120}
+                        className='object-contain'
+                        priority
+                    />
+                </div>
                             </div>
+
                             <h3 className='text-3xl md:text-4xl font-bold text-black'>
                                 Participe do Turismo Talks: o evento que marca o início dessa
                                 jornada.
@@ -381,7 +383,7 @@ export default function Landing() {
                                 convidado!
                             </p>
                             <Button
-                                href='https://www.sympla.com.br/evento/turismo-talks---noroeste-rs/3026401'
+                                href='https://www.instagram.com/reel/DMffP1ox9JP/?igsh=MXU0amN1cDNpOGloeA=='
                                 target='_blank'
                                 variant='contained'
                                 size='large'
@@ -397,25 +399,11 @@ export default function Landing() {
                                     fontSize: '1rem',
                                 }}
                             >
-                                Quero participar do evento
+                                Veja como foi a primeira edição
                             </Button>
-
-                            <ul className='mt-6 text-gray-700 space-y-2 text-base'>
-                                <li>
-                                    <span className='mr-2'>📍</span>
-                                    <strong>FASA</strong> – Santo Ângelo
-                                </li>
-                                <li>
-                                    <span className='mr-2'>📅</span>
-                                    <strong>19 de Julho</strong>
-                                </li>
-                                <li>
-                                    <span className='mr-2'>⏰</span>
-                                    <strong>08:00 às 18:00</strong>
-                                </li>
-                            </ul>
-                        </div>
-
+                          <div className='mt-6 text-gray-700 text-base'>
+                           Teremos novidades em breve
+                          </div>
                         {/* right column: hero photo */}
                         <div className='relative w-full h-60 md:h-80 lg:h-[28rem]'>
                             <Image
@@ -530,9 +518,7 @@ export default function Landing() {
             <section id='cta-final' className='py-16 bg-gray-900 text-white text-center px-8'>
                 {/* TÍTULO */}
                 <h2 className='max-w-3xl mx-auto text-3xl md:text-4xl font-bold mb-4 leading-snug'>
-                    Se você quer fazer parte do futuro do turismo – trabalha com turismo,
-                    <br />
-                    presta serviços ou quer começar a atender esse setor – venha com a gente!
+                    Se você quer fazer parte do futuro do turismo venha com a gente!
                 </h2>
 
                 {/* LINHA VERDE */}
@@ -543,17 +529,17 @@ export default function Landing() {
                     {[
                         {
                             icon: '/146.png',
-                            label: 'Sou empresa e quero melhorar minha comunicação',
+                            label: 'Sou Empresa do Trade Turístico',
                             url: 'https://docs.google.com/forms/d/e/1FAIpQLSf9pxhs4WONGMmRALgR5zD_zD4o5xwaXHDdEq48IrRaqGbJuA/viewform',
                         },
                         {
                             icon: '/148.png',
-                            label: 'Sou prestador e quero oferecer meus serviços',
+                            label: 'Presto serviço ou quero começar atender o Turismo',
                             url: 'https://docs.google.com/forms/d/e/1FAIpQLSdBfvsG1FvPB3jKTAkFhS1IBzt4yCU5038ps2tt5S_bRi47SA/viewform',
                         },
                         {
                             icon: '/147.png',
-                            label: 'Quero saber mais sobre o evento Turismo Talks',
+                            label: 'Quero saber mais sobre o Turismo Talks',
                             url: 'https://www.sympla.com.br/evento/turismo-talks-noroeste-rs/3026401',
                         },
                     ].map(({ icon, label, url }) => (
@@ -567,56 +553,15 @@ export default function Landing() {
                 </div>
             </section>
 
-            {/* FOOTER */}
-            <footer className='py-8 bg-gray-900 px-8'>
-                <div className='max-w-6xl mx-auto flex items-center justify-between'>
-                    <div className='text-white font-bold text-xl'>
-                        LinkMe<span className='text-[#2BE58F]'>Tur</span>
-                    </div>
-                    <div className='flex space-x-4'>
-                        <a
-                            href='https://instagram.com'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-400 hover:text-white transition'
-                        >
-                            {/* SVG Instagram */}
-                            <svg className='w-6 h-6 fill-current' viewBox='0 0 24 24'>
-                                …
-                            </svg>
-                        </a>
-                        <a
-                            href='https://facebook.com'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-400 hover:text-white transition'
-                        >
-                            {/* SVG Facebook */}
-                            <svg className='w-6 h-6 fill-current' viewBox='0 0 24 24'>
-                                …
-                            </svg>
-                        </a>
-                        <a
-                            href='https://linkedin.com'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-400 hover:text-white transition'
-                        >
-                            {/* SVG LinkedIn */}
-                            <svg className='w-6 h-6 fill-current' viewBox='0 0 24 24'>
-                                …
-                            </svg>
-                        </a>
-                        <a
-                            href='https://wa.me/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='text-gray-400 hover:text-white transition'
-                        >
-                            {/* SVG WhatsApp */}
-                            <svg className='w-6 h-6 fill-current' viewBox='0 0 24 24'>
-                                …
-                            </svg>
+{/* FOOTER */}
+<footer className='py-8 bg-gray-900 px-8'>
+    <div className='max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4'>
+        <div className='text-white font-bold text-xl'>
+            LinkMe<span className='text-[#2BE58F]'>Tur</span>
+        </div>
+        <div className='text-gray-400 hover:text-white transition'>
+            <a href='mailto:contato@linkmetur.com.br'>
+                contato@linkmetur.com.br
                         </a>
                     </div>
                 </div>
